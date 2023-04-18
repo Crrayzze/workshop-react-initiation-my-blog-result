@@ -33,3 +33,22 @@
 .navigation-element:hover {
   color: #000AFF;
 }
+
+.create-button {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: #000AFF;
+  border-color: #000AFF;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid;
+  transition: 0.3s;
+}
+
+.create-button:hover {
+  background-color: #000AFF;
+  border-color: #000AFF;
+  color: #fff;
+}

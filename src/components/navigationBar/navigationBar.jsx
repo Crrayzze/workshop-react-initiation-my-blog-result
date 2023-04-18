@@ -37,7 +37,12 @@ export const NavigationBar = () => {
         >
           About Me
         </div>
-        <button>Create article</button>
+        <button
+          className="create-button"
+          onClick={() => handleClick("/createArticles")}
+        >
+          Create article
+        </button>
       </div>
     </nav>
   );
