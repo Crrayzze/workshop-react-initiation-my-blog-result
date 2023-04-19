@@ -14,7 +14,6 @@ export const ReadArticle = () => {
         <h1 className="read-title">{article.title}</h1>
         <p className="read-content">{article.content}</p>
       </div>
-    
     </div>
   );
 }
