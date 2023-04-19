@@ -3,7 +3,6 @@ import "./createArticles.css";
 import { articlesList } from "../../data/articles";
 
 export const CreateArticles = () => {
-
   const submitArticle = () => {
     const title = document.querySelector("input[name='title']").value;
     const imageUrl = document.querySelector("input[name='picture']").value;
@@ -17,7 +16,7 @@ export const CreateArticles = () => {
     };
 
     articlesList.push(newArticle);
-  }
+  };
 
   return (
     <div>
@@ -27,11 +26,19 @@ export const CreateArticles = () => {
           <div className="create-article-top-input">
             <div>
               <h2>Title</h2>
-              <input type="text" className="create-article-input" name="title" />
+              <input
+                type="text"
+                className="create-article-input"
+                name="title"
+              />
             </div>
             <div>
               <h2>Picture URL</h2>
-              <input type="url" className="create-article-input" name="picture" />
+              <input
+                type="url"
+                className="create-article-input"
+                name="picture"
+              />
             </div>
           </div>
           <h2>Article</h2>
@@ -42,7 +49,9 @@ export const CreateArticles = () => {
             className="create-article-text"
           />
         </div>
-        <button onClick={() => submitArticle()}>Submit</button>
+        <button onClick={() => submitArticle()} className="submit-button">
+          Submit
+        </button>
       </div>
     </div>
   );
